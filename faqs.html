@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - TaxFiler</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TaxFiler</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="site.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faqs.html" class="active">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="faq-banner">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p>Your most common tax filing questions, answered by our experts.</p>
+        </div>
+    </section>
+
+    <section id="faq-list">
+        <div class="container">
+            <h2>Common Questions</h2>
+
+            <div class="faq-item">
+                <h3>What is the deadline for filing taxes?</h3>
+                <div class="faq-answer">
+                    <p>The general deadline for filing income tax returns in Bangladesh is usually November 30 of each year. However, it may be extended depending on government announcements.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>What documents do I need to file my taxes?</h3>
+                <div class="faq-answer">
+                    <p>You will need your TIN (Taxpayer Identification Number), proof of income (such as salary slips or business income records), bank statements, and investment documents. A detailed list will be provided when you start the filing process.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>How much do you charge for tax filing services?</h3>
+                <div class="faq-answer">
+                    <p>Our pricing depends on the type of service. For individual tax filing, the charge is BDT 3,000, while business tax filing starts from BDT 10,000. Please refer to our <a href="services.html">services page</a> for more details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I file taxes if I missed the deadline?</h3>
+                <div class="faq-answer">
+                    <p>Yes, you can still file taxes after the deadline, but you may incur penalties and interest. We recommend filing as soon as possible to minimize these costs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you offer tax consultation services?</h3>
+                <div class="faq-answer">
+                    <p>Yes, we offer personalized tax consultations to help you navigate complex tax scenarios. Our consultation fees start from BDT 2,000 per hour.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TaxFiler. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for FAQ toggle functionality
+        const faqItems = document.querySelectorAll('.faq-item h3');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

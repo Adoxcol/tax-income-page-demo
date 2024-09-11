@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxFiler - Professional Tax Filing Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TaxFiler</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Fast & Reliable Tax Filing</h2>
+                <p>Filing your income tax has never been easier. Let us handle the paperwork while you focus on what matters most.</p>
+                <a href="#" class="cta-button">Get Started Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Registration Section -->
+    <section id="login-register">
+        <div class="container">
+            <div class="login-register-wrapper">
+                <div class="login-box">
+                    <h2>Login</h2>
+                    <form action="login.php" method="POST">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="email" required>
+
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="password" required>
+
+                        <button type="submit">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#register">Register here</a></p>
+                </div>
+
+                <div class="register-box" id="register">
+                    <h2>Register</h2>
+                    <form action="register.php" method="POST">
+                        <label for="register-name">Full Name:</label>
+                        <input type="text" id="register-name" name="name" required>
+
+                        <label for="register-email">Email:</label>
+                        <input type="email" id="register-email" name="email" required>
+
+                        <label for="register-password">Password:</label>
+                        <input type="password" id="register-password" name="password" required>
+
+                        <button type="submit">Register</button>
+                    </form>
+                    <p>Already have an account? <a href="#login">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-wrapper">
+                <div class="service-box">
+                    <h3>Individual Tax Filing</h3>
+                    <p>We help individuals file their taxes accurately and efficiently with expert guidance at every step.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Business Tax Solutions</h3>
+                    <p>Customized tax solutions for businesses, ensuring you stay compliant while maximizing tax benefits.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Tax Consultation</h3>
+                    <p>Our expert tax advisors provide personalized consultations to optimize your tax filings and reduce liabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-wrapper">
+                <div class="testimonial-box">
+                    <p>“TaxFiler made the entire tax filing process so easy and stress-free! I highly recommend their services.”</p>
+                    <h4>— John D., Freelance Developer</h4>
+                </div>
+                <div class="testimonial-box">
+                    <p>“As a small business owner, TaxFiler helped me save on taxes while ensuring compliance. Amazing service!”</p>
+                    <h4>— Sarah K., Business Owner</h4>
+                </div>
+                <div class="testimonial-box">
+                    <p>“The customer service and attention to detail were top-notch. I’ll be using TaxFiler every year.”</p>
+                    <h4>— Mike W., Consultant</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TaxFiler. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+</body>
+</html>

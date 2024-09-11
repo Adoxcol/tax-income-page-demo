@@ -1,0 +1,150 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    padding: 40px 0;
+}
+
+header .logo {
+    float: left;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: white;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a.active {
+    color: #f8c12d;
+}
+
+header nav ul li a:hover {
+    color: #f8c12d;
+}
+
+/* FAQ Banner */
+#faq-banner {
+    background-image: url('https://source.unsplash.com/1600x900/?question,office');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+}
+
+#faq-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 62, 80, 0.6);
+}
+
+#faq-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+#faq-banner h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#faq-banner p {
+    font-size: 1.3em;
+}
+
+/* FAQ Section */
+#faq-list {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: left;
+}
+
+#faq-list h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.faq-item h3:hover {
+    color: #f8c12d;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 1em;
+    color: #555;
+}
+
+.faq-answer.active {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
